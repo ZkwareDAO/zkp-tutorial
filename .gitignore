@@ -12,3 +12,4 @@ Cargo.lock
 expanded.rs
 .idea
 .DS_store
+*.sage.py
