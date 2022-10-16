@@ -8,10 +8,19 @@ edition = "2021"
 [dependencies]
 ff = "0.12"
 bls12_381 = "0.7.0"
+#elliptic-curve = { version = "0.12", default-features = false, features = ["digest", "sec1"] }
+#signature = { version = ">=1.6.2, <1.7", default-features = false, features = ["hazmat-preview", "rand-preview"] }
+hex="0.4.3"
+rand_core="0.6.3"
+k256="0.9.6"
 
 [dev-dependencies]
 criterion = "0.3.2"
 
 [[bench]]
 name = "ffbench"
+harness = false
+
+[[bench]]
+name = "ecdsa"
 harness = false
